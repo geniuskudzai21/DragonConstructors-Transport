@@ -383,15 +383,52 @@
             </div>
             
             <div style="margin-top: 40px; text-align: center;">
-                <h3>Why Choose Our Team?</h3>
-                <ul style="list-style: none; margin-top: 20px;">
-                    <li style="margin-bottom: 10px;">✅ Local Gauteng experts</li>
-                    <li style="margin-bottom: 10px;">✅ Eco-friendly disposal</li>
-                    <li style="margin-bottom: 10px;">✅ Same-day service available</li>
-                    <li style="margin-bottom: 10px;">✅ Transparent pricing</li>
-                    <li style="margin-bottom: 10px;">✅ Professional service</li>
-                    <li style="margin-bottom: 10px;">✅ 100% satisfaction guarantee</li>
-                </ul>
+                <div class="why-choose-team-card">
+                    <h3 style="font-size:2rem; color:#1e88e5; margin-bottom:20px;"><i class="fas fa-thumbs-up" style="color:#43a047;"></i> Why Choose Our Team?</h3>
+                    <div class="why-choose-features">
+                        <div class="why-feature"><i class="fas fa-map-marker-alt" style="color:#e53935;"></i><span>Local Gauteng experts</span></div>
+                        <div class="why-feature"><i class="fas fa-leaf" style="color:#43a047;"></i><span>Eco-friendly disposal</span></div>
+                        <div class="why-feature"><i class="fas fa-bolt" style="color:#fbc02d;"></i><span>Same-day service available</span></div>
+                        <div class="why-feature"><i class="fas fa-money-bill-wave" style="color:#00897b;"></i><span>Transparent pricing</span></div>
+                        <div class="why-feature"><i class="fas fa-user-tie" style="color:#3949ab;"></i><span>Professional service</span></div>
+                        <div class="why-feature"><i class="fas fa-star" style="color:gold;"></i><span>100% satisfaction guarantee</span></div>
+                    </div>
+                </div>
+                <style>
+                .why-choose-team-card {
+                    display: inline-block;
+                    background: #f5f7fa;
+                    border-radius: 18px;
+                    box-shadow: 0 4px 24px rgba(30,136,229,0.08);
+                    padding: 32px 24px;
+                    margin: 0 auto 20px auto;
+                    max-width: 480px;
+                    text-align: center;
+                }
+                .why-choose-features {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                    margin-top: 18px;
+                }
+                .why-feature {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    font-size: 1.15rem;
+                    background: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 8px rgba(30,136,229,0.06);
+                    padding: 10px 18px;
+                    transition: box-shadow 0.2s;
+                }
+                .why-feature:hover {
+                    box-shadow: 0 4px 16px rgba(30,136,229,0.18);
+                }
+                .why-feature i {
+                    font-size: 1.4em;
+                }
+                </style>
             </div>
         </div>
     </section>
