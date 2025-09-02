@@ -521,7 +521,7 @@ nav ul li a:hover {
 
 /* ===== CTA SECTION ===== */
 .cta {
-    background: linear-gradient(135deg, #ffffff 0%, #29099c 100%);
+    background: grey;
     color: rgb(0, 0, 0);
 }
 
