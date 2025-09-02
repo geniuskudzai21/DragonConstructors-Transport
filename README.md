@@ -17,18 +17,12 @@ A modern, responsive website for DragonConstructors Transport, a professional mo
 - CSS3 (custom styles, responsive layout)
 - Font Awesome (icons)
 
-## Getting Started
-1. Clone or download the repository.
-2. Open `index.html` in your browser to view the site.
-3. Edit `style.css` to customize styles as needed.
-
 ## File Structure
 ```
 ├── index.html           # Main website file
 ├── style.css            # Main stylesheet
 ├── responsiveness.css   # Additional responsive styles
 ├── car.jpg              # Example image
-```
 
 ## Customization
 - Update content in `index.html` for your business details.
