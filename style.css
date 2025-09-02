@@ -521,7 +521,7 @@ nav ul li a:hover {
 
 /* ===== CTA SECTION ===== */
 .cta {
-    background: grey;
+    background: rgb(37, 37, 37);
     color: rgb(0, 0, 0);
 }
 
