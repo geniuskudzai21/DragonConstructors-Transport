@@ -456,6 +456,7 @@ nav ul li a:hover {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+        border: 1px solid rgb(12, 67, 219);
 }
 
 .team-member:hover {
@@ -492,6 +493,7 @@ nav ul li a:hover {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        border: 1px solid rgb(12, 67, 219);
 }
 
 .faq-item h3 {
@@ -524,7 +526,7 @@ nav ul li a:hover {
     background: rgba(255,255,255,0.1);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgb(12, 67, 219);
 }
 
 .contact-method i {
