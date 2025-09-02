@@ -442,35 +442,100 @@
             </div>
             
             <div class="faq-grid">
-                <div class="faq-item">
-                    <h3><i class="fas fa-calendar-alt"></i> How far in advance should I book?</h3>
-                    <p>We recommend booking at least 24-48 hours in advance for standard services. Same-day bookings are also available depending on availability.</p>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)"><span><i class="fas fa-calendar-alt"></i> How far in advance should I book?</span> <i class="fas fa-chevron-down faq-arrow"></i></button>
+                        <div class="faq-answer" style="display:none;">
+                            <p>We recommend booking at least 24-48 hours in advance for standard services. Same-day bookings are also available depending on availability.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)"><span><i class="fas fa-box"></i> Do you provide packaging materials?</span> <i class="fas fa-chevron-down faq-arrow"></i></button>
+                        <div class="faq-answer" style="display:none;">
+                            <p>Yes, we offer packaging materials for an additional fee. We can provide boxes, bubble wrap, and other moving supplies to make your move easier.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)"><span><i class="fas fa-shield-alt"></i> Are you insured?</span> <i class="fas fa-chevron-down faq-arrow"></i></button>
+                        <div class="faq-answer" style="display:none;">
+                            <p>Yes, DragonConstructors Transport is fully insured. We provide coverage for both property damage and liability to ensure your peace of mind during our services.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)"><span><i class="fas fa-truck-loading"></i> How quickly can I get same-day rubble removal in Gauteng?</span> <i class="fas fa-chevron-down faq-arrow"></i></button>
+                        <div class="faq-answer" style="display:none;">
+                            <p>We typically respond within 2-3 hours for same-day rubble removal requests. Contact us early in the day for best availability.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)"><span><i class="fas fa-recycle"></i> What items do you recycle and collect in Gauteng?</span> <i class="fas fa-chevron-down faq-arrow"></i></button>
+                        <div class="faq-answer" style="display:none;">
+                            <p>We collect paper, cardboard, plastics, glass, metals, garden waste, construction rubble, and used cooking oil for recycling across Gauteng.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)"><span><i class="fas fa-oil-can"></i> Do you collect cooking oil from restaurants in Sandton and Johannesburg?</span> <i class="fas fa-chevron-down faq-arrow"></i></button>
+                        <div class="faq-answer" style="display:none;">
+                            <p>Yes, we offer specialized cooking oil collection services for restaurants and food businesses throughout Sandton, Johannesburg, and the greater Gauteng area.</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="faq-item">
-                    <h3><i class="fas fa-box"></i> Do you provide packaging materials?</h3>
-                    <p>Yes, we offer packaging materials for an additional fee. We can provide boxes, bubble wrap, and other moving supplies to make your move easier.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3><i class="fas fa-shield-alt"></i> Are you insured?</h3>
-                    <p>Yes, DragonConstructors Transport is fully insured. We provide coverage for both property damage and liability to ensure your peace of mind during our services.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3><i class="fas fa-truck-loading"></i> How quickly can I get same-day rubble removal in Gauteng?</h3>
-                    <p>We typically respond within 2-3 hours for same-day rubble removal requests. Contact us early in the day for best availability.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3><i class="fas fa-recycle"></i> What items do you recycle and collect in Gauteng?</h3>
-                    <p>We collect paper, cardboard, plastics, glass, metals, garden waste, construction rubble, and used cooking oil for recycling across Gauteng.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3><i class="fas fa-oil-can"></i> Do you collect cooking oil from restaurants in Sandton and Johannesburg?</h3>
-                    <p>Yes, we offer specialized cooking oil collection services for restaurants and food businesses throughout Sandton, Johannesburg, and the greater Gauteng area.</p>
-                </div>
+                <script>
+                function toggleFaq(btn) {
+                    var answer = btn.nextElementSibling;
+                    var arrow = btn.querySelector('.faq-arrow');
+                    if (answer.style.display === 'none' || answer.style.display === '') {
+                        answer.style.display = 'block';
+                        arrow.classList.add('open');
+                        btn.classList.add('active');
+                    } else {
+                        answer.style.display = 'none';
+                        arrow.classList.remove('open');
+                        btn.classList.remove('active');
+                    }
+                }
+                </script>
+                <style>
+                .faq-accordion {
+                    max-width: 700px;
+                    margin: 0 auto;
+                }
+                .faq-item {
+                    margin-bottom: 16px;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 8px rgba(30,136,229,0.06);
+                    background: #fff;
+                    overflow: hidden;
+                }
+                .faq-question {
+                    width: 100%;
+                    text-align: left;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    font-size: 1.15rem;
+                    padding: 18px 24px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    transition: background 0.2s;
+                }
+                .faq-question.active, .faq-question:hover {
+                    background: #f5f7fa;
+                }
+                .faq-arrow {
+                    transition: transform 0.3s;
+                }
+                .faq-arrow.open {
+                    transform: rotate(180deg);
+                }
+                .faq-answer {
+                    padding: 0 24px 18px 24px;
+                    background: #f5f7fa;
+                    font-size: 1rem;
+                }
+                </style>
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
