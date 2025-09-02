@@ -98,3 +98,8 @@
         transform: translateY(0);
     }
 }
+@media (max-width: 900px) {
+    .local-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
