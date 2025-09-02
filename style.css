@@ -1,3 +1,10 @@
+/* ===== LOCAL SERVICES GRID ===== */
+.local-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
 /* ===== CSS RESET & BASE STYLES ===== */
 * {
     margin: 0;
