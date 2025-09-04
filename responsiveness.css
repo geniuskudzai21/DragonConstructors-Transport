@@ -4,9 +4,10 @@
     .header-container {
         flex-direction: column;
         gap: 1rem;
+ 
     }
     .header-container .logo{
-        font-size: 25px;
+        font-size: 23px;
     }
     
     nav ul {

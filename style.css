@@ -16,8 +16,8 @@ body {
     padding: 0 20px;
 }
 header {
-    background: #161616;
-    color: rgb(224, 223, 223);
+    background: #ffffff;
+    color: rgb(8, 8, 8);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -33,7 +33,7 @@ header {
 .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
 }
 .logo span {
     color: #421de9;
@@ -44,7 +44,7 @@ nav ul {
     gap: 2rem;
 }
 nav ul li a {
-    color: white;
+    color: rgb(19, 19, 19);
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
@@ -52,7 +52,7 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 nav ul li a:hover {
-    background-color: rgb(34, 25, 156);
+    background-color: rgb(56, 46, 204);
     transform: translateY(-2px);
 }
 .btn {
@@ -69,7 +69,7 @@ nav ul li a:hover {
 }
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(4, 28, 133, 0.973);
+    box-shadow: 0 8px 25px rgba(31, 63, 207, 0.973);
 }
 .hero {
     background: #dddfe7;
@@ -115,7 +115,6 @@ nav ul li a:hover {
     background: linear-gradient(145deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
     padding: 3rem 2rem;
     border-radius: 25px;
-    backdrop-filter: blur(15px);
     border: 1px solid #353535;
     text-align: center;
     min-width: 200px;
@@ -456,7 +455,6 @@ nav ul li a:hover {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    border: 1px solid rgb(12, 67, 219);
 }
 
 .team-member:hover {
@@ -493,7 +491,6 @@ nav ul li a:hover {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        border: 1px solid rgb(12, 67, 219);
 }
 
 .faq-item h3 {
@@ -525,7 +522,6 @@ nav ul li a:hover {
     padding: 2rem;
     background: rgba(255,255,255,0.1);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
     border: 1px solid rgb(12, 67, 219);
 }
 
