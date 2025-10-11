@@ -16,7 +16,7 @@ body {
     padding: 0 20px;
 }
 header {
-    background: #ffffff;
+    background: #252525;
     color: rgb(8, 8, 8);
     padding: 1rem 0;
     position: fixed;
@@ -33,7 +33,7 @@ header {
 .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #000000;
+    color: #f3f2f2;
 }
 .logo span {
     color: #421de9;
@@ -44,7 +44,7 @@ nav ul {
     gap: 2rem;
 }
 nav ul li a {
-    color: rgb(19, 19, 19);
+    color: rgb(236, 236, 236);
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
