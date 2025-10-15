@@ -1,3 +1,5 @@
+import { inject } from "@vercel/analytics"
+
 // Toggle FAQ accordion functionality
 function toggleFaq(btn) {
     var answer = btn.nextElementSibling;
